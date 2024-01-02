@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdLib</title>
+    <script src="./Perz.js"></script>
+    <script src="./Storage.js"></script>
+    <link rel="stylesheet" href="./Perz.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+</head>
+
+<body onload="audioplayer();">
+    <nav id="Nav_Bar">
+        <div id="Nav_Inner">
+            <Ul id="Nav_List">
+                <li class="Nav_Item" id="Ni1">
+                    <a id="MainLink" href="/AdLib/Main.html" style="text-decoration: none; color: white;">  <b>AdLib.com</b></a>
+                </li>
+                <li class="Nav_Item" id="Ni2">
+
+                </li>
+                <li class="Nav_Item" id="Ni3">
+
+                </li>
+                <li class="Nav_Item" id="Ni3">
+
+                </li>
+
+            </Ul>
+        </div>
+        <div id="Nav_UnderBox"></div>
+    </nav>
+    <div id="MainPageCont" style="z-index: 99999999;">
+        <div id="Path_Cont"> </div>
+        <aside id="Side_Bar">
+            <nav id="Side_Bar_Nav">
+                <Ul id="Side_Bar_List">
+                    <li id="Side_Item_Storage">
+                        <button id="Side_Storage_Show" onclick="show('Storage')"></button>
+                    </li>
+                    <li id="Side_Item_School">
+                        <button id="Side_School_Show" onclick="show('School')"></button>
+                    </li>
+                    <li id="Side_Item_Code">
+                        <button id="Side_Code_Show" onclick="show('Code')"></button>
+                    </li>
+                </Ul>
+            </nav>
+        </aside>
+        <main id="Content" style="z-index: 999999999;">
+            <div id="Storage" hidden>
+
+                <input type="text" id="Jst-InputId1">
+                <button id="Jst-Submitt1" type="submit"
+                    onclick="Process(document.getElementById('Jst-InputId1').value)"></button>
+            </div>
+            <div id="School" hidden>
+                <b id="School_Schema_Headline">
+                    Schema
+                </b>
+                <ul id="School_Schem">
+                    <ul id="School_Schem_SDM" class="SD" style="list-style: none;">
+                        Måndag
+                        <li>Sv - 8:20 / 9:30</li>
+                        <li>Sv - 9:55 / 11:10</li>
+                        <li>En - 11:15 / 12:15</li>
+                        <li>IDH - 13:15 / 14:05</li>
+                    </ul>
+                    <ul id="School_Schem_SDT" class="SD" style="list-style: none;">
+                        Tisdag
+                        <li>Ma - 8:20 / 9:40</li>
+                        <li>Sv - 10:10 / 10:55</li>
+                        <li>So - 11:00 / 10:55</li>
+                        <li>NO - 12:40 / 13:45</li>
+                        <li>En - 13:55 / 14:55</li>
+                        <li>ME - 15:05 / 15:25</li>
+                    </ul>
+                    <ul id="School_Schem_SDO" class="SD" style="list-style: none;">
+                        Onsdag
+                        <li>Mu - 8:20 / 9:45</li>
+                        <li>No - 10:00 / 10:55</li>
+                        <li>IDH - 11:15 / 12:05</li>
+                        <li>Ma - 12:55 / 14:10</li>
+                    </ul>
+                    <ul id="School_Schem_SDTO" class="SD" style="list-style: none;">
+                        Torsdag
+                        <li>Sv - 8:20 / 9:20</li>
+                        <li>So - 9:40 / 10:35</li>
+                        <li>Ma - 10:40 / 12:00</li>
+                        <li>Ev - 12:50 / 13:30</li>
+                        <li>Me - 13:35 / 14:00</li>
+                        <li>Mu - 14:20 / 15:35</li>
+                    </ul>
+                    <ul id="School_Schem_SDF" class="SD" style="list-style: none;">
+                        Fredag
+                        <li>En - 8:20 / 9:40</li>
+                        <li>So - 9:45 / 10:55</li>
+                        <li>No - 11:05 / 12:10</li>
+                        <li>IDg - 13:05 / 13:55</li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div id="Code">
+                <input type="text" id="hs">
+                <input type="text" id="Bd0">
+                <input type="text" id="Bd1">
+                <input type="text" id="Fd0">
+                <input type="text" id="Fd1">
+<a href="http://"></a>
+    </div>
+    </div>
+    
+    </main>
+
+    <div id="Music_Player_Bottom">
+        <div style="left: 20px; height: 35px; width: 50px; border-radius: 50%; position: absolute; background-color: black; bottom: 10px;"></div>
+        <audio src="" id="SongPlayer"></audio>
+        <div id="Music_Player_Bottom_Child">
+            <button class="Music_Player_ButtonS" onclick=" Play(true);"> <b>Play</b></button>
+            <button class="Music_Player_ButtonS" onclick=" Play(false);"><b>Pause</b> </button>
+            <button class="Music_Player_ButtonS" onclick=" Play(true, true);"><b>skip</b> </button>
+            <button class="Music_Player_ButtonS"
+                onclick="Play(true, false,document.getElementById('Volume').value)"><b>Volume</b></button>
+            <input id="Volume" type="range" max="100">
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

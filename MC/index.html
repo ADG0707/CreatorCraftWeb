@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCraft</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="cc.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="sql.js"></script>
+    <script src="index.js"></script>
+
+</head>
+
+
+<nav id="NavBar">
+    <div id="Nav_Icon">
+        <img id="Icon_Img" src="Material/CreatorCraftLogo.png" alt="">
+    </div>
+    <ul id="Nav_List">
+        <li class="Nav_I" id="Nav_I_Drop">
+
+            <img id="Nav_I_Drop_Img" onclick="DropClick(180,false)" src="Material/DropSym.png" alt="">
+            <ul id="Drop_ListBar">
+                <b class="DLi" id="HomeBut"><a id="HLink" href="index.html">Home</a></b>
+                <b class="DLi" id="Infobut"><a href="Info.html">Info</a></b>
+                <b class="DLi" id="NewsBut"><a id="NLink" href="http://creatorcraftmc.us.to:8123/?worldname=CreatorCraft&mapname=Overworld&flat&zoom=1&x=-502&y=64&z=-218&nopanel=true&hidechat=true">Map</a></b>
+            </ul>
+
+        </li>
+
+
+        <li class="Nav_I" id="Nav_I_Info"></li>
+        <li class="Nav_I" id="Nav_I_Discord"></li>
+    </ul>
+</nav>
+
+<body>
+    <main id="Main">
+        <ol id="OwnerPre" class="Pre">
+            <li id="OIcon">
+                <img class="PreIcon" src="Material/ff5a1f19-9f23-41dd-9376-1e71681790ea.png" alt="here">
+            </li>
+            <li id="OName">WaterUnivers</li>
+        </ol>
+        <ol id="Container_ServerInfo">
+            <li id="rest"></li>
+            <a href="https://discord.gg/TMgjkT8bdU">
+                <li id="Img"><img src="" id="favicon" alt="icon:"></li>
+            </a>
+            <li id="">CreatorCraft</li>
+            <li id="Online"></li>
+            <li>PlayerList:</li>
+            <ol id="PList">
+
+            </ol>
+
+        </ol>
+        <ol id="WebCreatorPre" class="Pre">
+            <li id="WIcon"><img class="PreIcon" src="Material/3da48d35-cbea-4f47-8641-420d1344e905.png" alt="here">
+            </li>
+            </li>
+            <li id="WName">ADG211</li>
+        </ol>
+
+    </main>
+    <div id="Mid_Sep"></div>
+
+
+    <img id="RuleButton" src="" onclick="DropClick(180,true)" alt="">
+    <div id="RulePage">
+        <div class="Rule" id="R1">
+            <h1><b>Grief</b></h1>
+            <textarea rows="15" readonly disabled id="RuleTA">Pulling pranks and light griefing is perfectly allowed, although retaliation should be expected. You're also expected to help clean up the messes you make if asked</textarea>
+        </div>
+        <div class="Rule" id="R2">
+            <h1><b>Cheats</b></h1>
+            <textarea rows="15" readonly disabled id="RuleTA">Cheats will not be highly moderated although if caught you'll be warned. You get two warnings and if caught a third time you'll be banned permanently.</textarea>
+        </div>
+        <div class="Rule" id="R3">
+            <h1><b>Rules</b></h1>
+            <textarea rows="15" readonly disabled id="RuleTA">Rules for the server are quite loose, relying mostly on the honor-system. We trust our players to behave and treat each other with respect</textarea>
+        </div>
+        <div class="Rule" id="R4">
+            <h1><b>Report</b></h1>
+            <textarea rows="15" readonly disabled
+                id="RuleTA">Any issues, exploits or cheats should be reported to the @Minecraft Admins, we'll proceed to handle it from there</textarea>
+        </div>
+        
+    </div>
+</body>
+
+</html>

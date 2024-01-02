@@ -1,0 +1,350 @@
+@media screen and (max-width: 1920px) {
+    
+
+    *{
+        margin: 0px 0px;
+        list-style: none;
+        background-color: ;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    #NavBar{
+        position:sticky;
+        top:0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #Nav_List{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #2E3192;
+    
+    }
+    #Nav_Icon{
+        position: absolute;
+        top: 0px;
+        display: flex;
+        left: 0;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        
+        
+        
+    
+    }
+    #Icon_Img{
+        max-width: 200px;
+        max-height: 300px;
+    }
+    
+    #Nav_I_Drop{
+        width: 20px;
+        height: 30px;
+        display: flex;
+        justify-content: flex-start;
+    
+    }
+    #Nav_I_Drop_Img{
+        
+        z-index: 2;
+        max-width: 40px;
+        max-height: 50px;
+        rotate: 180deg;
+        width: 20px;
+        height: 30px;
+    }
+    #Nav_I_Drop_Img{
+        z-index: 2;
+     
+        cursor: pointer;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #Drop_ListBar{
+        
+        top: 50px;
+    
+        position: absolute;
+        left: 0px;
+        display: none;
+        text-align: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        background-color: #2E3192;
+        color: white;
+        text-decoration: none;
+        height: 0px;
+        width: 50px;
+        z-index: 1;
+        border-radius: 0px 0px 40px 0px;
+        
+    }
+    
+    
+    .DLi{
+        margin-left: -10px;
+    }
+    
+    
+    #Main{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #Container_ServerInfo{
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        width: 300px;
+        height: 423px;
+        
+        background-color: green;
+    }
+    #Container_ServerInfo > *{
+       margin-left: -50px;
+    }
+    #Desc{
+        resize: none;
+        background-color: transparent;
+        border: none;
+    }
+    #Pre{
+        width: 300px;
+        max-height:400px ;
+    }
+    .PreIcon{
+        max-height: 400px;
+        
+    }
+    #Mid_Sep{
+        width: 100%;
+        height: 50px;
+        background-color: green;
+    }
+    #favicon{
+        width: 150px;
+    }
+    
+    #RulePage{
+        top: 150px;
+        position: absolute;
+        margin-top: 480px;
+        width: 100%;
+        height: 300px;
+        background-color: white;
+        animation: WFadeIn 3 linear 1 ease-in;
+    
+    
+    
+        display: flex;
+        justify-content: space-around;
+    }
+    #RuleButton{
+        top: 0px;
+        position: absolute;
+        margin-top: 580px;
+        width: 50px;
+        height: 50px;
+        left: 0px;
+        z-index: 999;
+    }
+    .Rule{
+        display: flex;
+        flex-direction: column;
+    }
+    #RuleTA{
+        border: none;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        background-color: transparent;
+        
+    }
+      
+}
+@media screen and (max-width: 1220px) {
+    
+
+    *{
+        margin: 0px 0px;
+        list-style: none;
+        background-color: ;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    #NavBar{
+        position:sticky;
+        top:0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #Nav_List{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #2E3192;
+    
+    }
+    #Nav_Icon{
+        position: absolute;
+        top: 0px;
+        display: flex;
+        left: 0;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        
+        
+        
+    
+    }
+    #Icon_Img{
+        max-width: 200px;
+        max-height: 300px;
+    }
+    
+    #Nav_I_Drop{
+        width: 20px;
+        height: 30px;
+        display: flex;
+        justify-content: flex-start;
+    
+    }
+    #Nav_I_Drop_Img{
+        
+        z-index: 2;
+        max-width: 40px;
+        max-height: 50px;
+        transform: rotate(180deg);
+        width: 20px;
+        height: 30px;
+    }
+    #Nav_I_Drop_Img{
+        z-index: 2;
+     
+        cursor: pointer;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #Drop_ListBar{
+        
+        top: 50px;
+    
+        position: absolute;
+        left: 0px;
+        display: none;
+        text-align: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        background-color: #2E3192;
+        color: white;
+        text-decoration: none;
+        height: 0px;
+        width: 50px;
+        z-index: 1;
+        border-radius: 0px 0px 40px 0px;
+        
+    }
+    
+   
+    
+    
+    #Main{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #Container_ServerInfo{
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        width: 200px;
+        height: 423px;
+        
+        background-color: green;
+    }
+    #Container_ServerInfo > *{
+       margin-left: -50px;
+    }
+    #Desc{
+        resize: none;
+        background-color: transparent;
+        border: none;
+    }
+    #Pre{
+        width: 200px;
+        max-height:300px ;
+    }
+    .PreIcon{
+        max-height: 300px;
+        
+    }
+    #Mid_Sep{
+        width: 100%;
+        height: 50px;
+        background-color: green;
+    }
+    #favicon{
+        width: 150px;
+    }
+    
+    #RulePage{
+        top: 70px;
+        position: absolute;
+        margin-top: 480px;
+        width: 100%;
+        height: 300px;
+        background-color: white;
+        animation: WFadeIn 3 linear 1 ease-in;
+    
+    
+    
+        display: grid;
+        grid-template-columns: min-content min-content;
+    }
+    #RuleButton{
+        top: 0px;
+        position: absolute;
+        margin-top: 580px;
+        width: 50px;
+        height: 50px;
+        left: 0px;
+        z-index: 999;
+    }
+    .Rule{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .Rule > h1{
+        font-size: smaller;
+        
+    }
+    #RuleTA{
+        border: none;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-small;
+        background-color: transparent;
+        
+    }
+      
+}
