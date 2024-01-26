@@ -57,25 +57,25 @@ $.getJSON(url, function(r) {
       var id = r.players.sample[index].id
       var li = document.createElement("li");
       li.innerHTML = r.players.sample[index].name;
-      document.getElementById("PList").appendChild(li);
-      /*var img = document.createElement("img")
+      li.id = "PLi"
+      document.getElementById("PlistCont").append(li);
+      
       var im2 = document.createElement("img")
       
       im2.src = "https://api.mineatar.io/body/full/" + id;
-      img.src = "https://api.mineatar.io/skin/" + id
+      //img.src = "https://api.mineatar.io/skin/" + id
+      im2.id = "im2"
       
-      document.getElementById("Img").appendChild(img);
-      im2.id = "im2 "
-      document.getElementById("Img").appendChild(im2);
-      */
+      document.getElementById(r.players.sample[index].name).append(im2);
+      
       
 
       
   }
   }
   
-  $('#Online').html( '<br><b>Players Online:</b> ' + r.players.online);
-  $('#favicon').attr('src', r.favicon);
+  $('#SPMb').html( '<br><b>Players Online:</b> ' + r.players.online);
+  $('#SIM').attr('src', r.favicon);
   
   $('#Desc').html(r.description)
 });
