@@ -57,7 +57,8 @@ $.getJSON(url, function(r) {
       var id = r.players.sample[index].id
       var li = document.createElement("li");
       li.innerHTML = r.players.sample[index].name;
-      li.id = "PLi"
+      li.id = r.players.sample[index].name
+      li.className = "PLi"
       document.getElementById("PlistCont").append(li);
       
       var im2 = document.createElement("img")
