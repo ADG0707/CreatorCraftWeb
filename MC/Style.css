@@ -10,11 +10,12 @@
         flex-direction: column;
         height: 165px;
         width: 65px;
+        margin-left: 40px;
     }
     #im2{
         height: 165px;
         width: 65px;
-        margin-left: 6px;
+        
     }
     *{
         margin: 0px 0px;
