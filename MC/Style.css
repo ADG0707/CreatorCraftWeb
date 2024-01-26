@@ -8,7 +8,13 @@
     .PLi{
         display: flex;
         flex-direction: column;
-        
+        height: 165px;
+        width: 65;
+    }
+    #im2{
+        height: 165px;
+        width: 65px;
+        margin-left: 6px;
     }
     *{
         margin: 0px 0px;
@@ -148,7 +154,7 @@
     }
     #PlistCont{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     #Info{
         
