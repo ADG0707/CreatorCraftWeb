@@ -1,6 +1,7 @@
 body{
     background-color: rgb(187, 187, 255);
 }
+
 #Media{
 
 }
@@ -24,10 +25,24 @@ justify-content: space-around;
     
 }
 .PCont{
-    background-color: darkgreen;
+    background-color: #595138;
     margin-top: 12px;
-    width: 100%;
+    margin-left: 10%;
+    width: 80%;
     height: 20vh;
     border: 10px solid;
-    border-left: 0px;
+    border-radius: 30px;
+    z-index: 1;
+}
+#Mods{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+}
+#Mod{
+    z-index: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
