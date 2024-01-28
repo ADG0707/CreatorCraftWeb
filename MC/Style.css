@@ -234,3 +234,33 @@
     }
     
 }
+@media screen and (max-width: 400px) {
+    #Rules{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+    }
+    #Welcome h1{
+        font-size: large;
+    }
+    .Rule{
+        height: 100px;
+        margin-top: 1.5vh;
+        font-size: x-small;
+    }
+    #Info{
+        height: 35vh;
+    }
+    #ServerBan{
+        display: none;
+    }
+    #MSS{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-right: 5vw ;
+    }
+    
+}
