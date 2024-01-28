@@ -251,7 +251,7 @@
         font-size: x-small;
     }
     #Info{
-        height: 45vh;
+        height: 300px;
     }
     #ServerBan{
         display: none;
