@@ -22,7 +22,7 @@
         list-style: none;
         background-color: ;
         text-decoration: none;
-        color: rgb(17, 17, 1);
+        
         
     }
     
@@ -95,7 +95,7 @@
         flex-direction: column;
         justify-content: space-around;
         
-        background-color: #1d1d36;
+        background-color: #595138;
         color: white;
         text-decoration: none;
         height: 0px;
@@ -103,6 +103,15 @@
         z-index: 1;
         border-radius: 0px 0px 40px 0px;
         
+    }
+    .DLi{
+        color: white;
+        
+    }
+    a:-webkit-any-link {
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
     }
 
 
