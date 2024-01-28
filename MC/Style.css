@@ -167,7 +167,7 @@
         height: 30vh;
         background: #595138;
         align-items: center;
-        justify-content: center;
+        justify-content: baseline;
         border-radius:  0px 0px 60px 60px;
     }
     #Rules{
@@ -216,6 +216,7 @@
     }
     .Rule{
         height: 100px;
+        margin-top: 1.5vh;
     }
     #Info{
         height: 45vh;
