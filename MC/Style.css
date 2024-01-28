@@ -119,8 +119,10 @@
         align-items: center;
     }
     #WebDev{
-        max-height: 23vh;
+        height: 23vh;
+        width: 12vh;
     }
+    
     #Dev{
         display: flex;
         flex-direction: column;
