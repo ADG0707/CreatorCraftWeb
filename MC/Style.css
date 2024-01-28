@@ -234,7 +234,7 @@
     }
     
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #Rules{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -249,7 +249,7 @@
         font-size: x-small;
     }
     #Info{
-        height: 35vh;
+        height: 45vh;
     }
     #ServerBan{
         display: none;
