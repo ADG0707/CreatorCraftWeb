@@ -28,7 +28,7 @@ justify-content: space-around;
     background-color: #595138;
     margin-top: 12px;
     margin-left: 10%;
-    width: 80%;
+    max-width: 80%;
     height: 20vh;
     border: 10px solid;
     border-radius: 30px;
@@ -40,7 +40,7 @@ justify-content: space-around;
 }
 #Mods{
     display: grid;
-    grid-template-columns: max-content max-content max-content max-content  max-content max-content;
+    grid-template-columns: max-content max-content max-content max-content  max-content max-content max-content;
     align-items: center;
     overflow: auto;
     white-space: nowrap;
@@ -49,10 +49,10 @@ justify-content: space-around;
 }
 #Mod{
     
-    margin-left: 20px;
+    margin-left: 23px;
     display: flex;
     flex-direction: column;
-    max-width: 15vw;
+    max-width: 20vw;
 }
 #Mod b{
     color: white;
