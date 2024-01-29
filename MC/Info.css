@@ -32,17 +32,35 @@ justify-content: space-around;
     height: 20vh;
     border: 10px solid;
     border-radius: 30px;
-    z-index: 1;
+    
+}
+#H1Mods{
+   color: white;
+   margin-left: 48%;
 }
 #Mods{
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content  max-content max-content;
     align-items: center;
     overflow: auto;
     white-space: nowrap;
+    height: 550vh;
+    
 }
 #Mod{
-    z-index: 0;
+    
     margin-left: 20px;
     display: flex;
     flex-direction: column;
+    max-width: 15vw;
+}
+#Mod b{
+    color: white;
+    text-align: left;
+    
+}
+#Mod img{
+    border-radius: 20%;
+    height: 100px;
+    width: 100px;
 }
