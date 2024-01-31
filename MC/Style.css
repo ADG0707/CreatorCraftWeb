@@ -222,6 +222,9 @@
         grid-template-columns: 50% 50%;
 
     }
+    #SNb{
+        font-size: x-small;
+    }
     #Welcome h1{
         font-size: x-large;
     }
