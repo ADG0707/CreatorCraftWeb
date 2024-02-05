@@ -1,18 +1,22 @@
 
-
+var down = false;
 function DropClick(deg, a) {
+  
   if (a == false) {
     var List = document.getElementById("Drop_ListBar")
     var DripImg = document.getElementById("Nav_I_Drop_Img");
-    if (List.style.display == "none") {
+    if (down == false) {
       DripImg.style.transform = "rotate(180deg)";
       List.style.display = "flex";
       List.style.height = "500px";
-
+      down = true;
+      console.log(down)
     } else {
       DripImg.style.transform = "rotate(0deg)";
       List.style.display = "none";
       List.style.height = "0px";
+      down = false
+
     };
   }
 

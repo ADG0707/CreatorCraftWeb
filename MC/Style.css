@@ -91,6 +91,7 @@
         position: absolute;
         left: 0px;
         display: none;
+        list-style: none;
         text-align: flex-start;
         flex-direction: column;
         justify-content: space-around;
