@@ -1,20 +1,30 @@
 
+
 var down = false;
 function DropClick(deg, a) {
   
   if (a == false) {
-    var List = document.getElementById("Drop_ListBar")
+    
     var DripImg = document.getElementById("Nav_I_Drop_Img");
     if (down == false) {
+      if (document.getElementById("Drop_ListBarDown")) {
+        var List = document.getElementById("Drop_ListBarDown")
+      }
+      if (document.getElementById("Drop_ListBar")) {
+        var List = document.getElementById("Drop_ListBarUp")
+      }
+      if (document.getElementById("Drop_ListBarNone")) {
+        var List = document.getElementById("Drop_ListBarNone")
+      }
       DripImg.style.transform = "rotate(180deg)";
-      List.style.display = "flex";
-      List.style.height = "500px";
+      
       down = true;
+      List.id = "Drop_ListBarUp"
       console.log(down)
     } else {
+      var List = document.getElementById("Drop_ListBarUp")
       DripImg.style.transform = "rotate(0deg)";
-      List.style.display = "none";
-      List.style.height = "0px";
+      List.id = "Drop_ListBarDown"
       down = false
 
     };

@@ -76,15 +76,14 @@
         rotate: 180deg;
         width: 20px;
         height: 30px;
-    }
-    #Nav_I_Drop_Img{
         z-index: 2;
      
         cursor: pointer;
         display: flex;
         flex-direction: row-reverse;
     }
-    #Drop_ListBar{
+    
+    #Drop_ListBarNone{
         
         top: 50px;
     
@@ -97,13 +96,82 @@
         justify-content: space-around;
         
         background-color: #595138;
-        color: white;
+        color: transparent;
         text-decoration: none;
         height: 0px;
         width: 50px;
         z-index: 1;
         border-radius: 0px 0px 40px 0px;
+        animation: Drop 3s ease-in-out 0s  1;
+    }
+    #Drop_ListBarUp{
         
+        top: 50px;
+    
+        position: absolute;
+        left: 0px;
+        display: flex;
+        list-style: none;
+        text-align: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        background-color: #595138;
+        color: white;
+        text-decoration: none;
+        height: 450px;
+        width: 50px;
+        z-index: 1;
+        border-radius: 0px 0px 40px 0px;
+        animation: Drop 1s ease-in-out 0s  1;
+    }
+    @keyframes Drop {
+        0%{
+            height: 0px;
+            color: transparent;
+            font-size: 0px;
+        }
+        90%{
+            height: 500px;
+            color: rgb(0, 0, 0);
+        }
+        100%{
+            font-size: 20px;
+            height: 450px;
+        }
+    }
+    #Drop_ListBarDown{
+        
+        top: 50px;
+    
+        position: absolute;
+        left: 0px;
+        display: flex;
+        list-style: none;
+        text-align: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        background-color: #595138;
+        color: white;
+        text-decoration: none;
+        height: 450px;
+        width: 50px;
+        z-index: 1;
+        border-radius: 0px 0px 40px 0px;
+        animation: DropDown 1s ease-in-out 0s  1 forwards;
+    }
+    @keyframes DropDown {
+        0%{
+            height: 450px;
+            
+        }
+       
+        100%{
+            font-size: 0px;
+            height: 0px;
+            display: none;
+        }
     }
     .DLi{
         color: white;
