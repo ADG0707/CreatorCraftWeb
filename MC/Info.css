@@ -1,30 +1,30 @@
 body{
     background-color: rgb(187, 187, 255);
-}
+} /*sätter body bakrund till vit*/
 
 #Media{
 
 }
-#Download{
+#Download{ /*skapar hur items ska organisera sig genom flex och flexa neråt med spacing runt omkring itemsarna*/
 display: flex;
 flex-direction: column;
 justify-content: space-around;
 }
-#Ico{
+#Ico{ /*Sätter hur stor en bild får vara*/
     max-height: 50px;
     max-width: 50px;
 }
 #Info{
 
 }
-#Ip{
+#Ip{ /*ändrar ipns position*/
     margin-top: -40px;
     margin-left: 50px;
 }
 #About{
     
 }
-.PCont{
+.PCont{ /*generäll box för framtiden*/
     background-color: #595138;
     margin-top: 12px;
     margin-left: 10%;
@@ -34,11 +34,11 @@ justify-content: space-around;
     border-radius: 30px;
     
 }
-#H1Mods{
+#H1Mods{ /*Ändrar H1 object till vit färg och en margin*/
    color: white;
    margin-left: 48%;
 }
-#Mods{
+#Mods{/*Visar en grid med alla mods i som dessutom gömmer items som inte är i elementet med overflow och white-space*/
     display: grid;
     grid-template-columns: max-content max-content max-content max-content  max-content max-content max-content;
     align-items: center;
@@ -47,20 +47,20 @@ justify-content: space-around;
     height: 550vh;
     
 }
-#Mod{
+#Mod{ /*Ändrar hur alla element med Mod id Ska vara positionerade samt deras texter*/
     
     margin-left: 23px;
     display: flex;
     flex-direction: column;
     max-width: 20vw;
 }
-#Mod:hover img{
+#Mod:hover img{ /*ökar storleken på bilden när musen är över*/
     border-radius: 20%;
     height: 120px;
     width: 120px;
     
 }
-#Mod img{
+#Mod img{ /*Bas img storlek*/
     border-radius: 20%;
     height: 100px;
     width: 100px;

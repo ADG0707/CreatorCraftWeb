@@ -1,7 +1,7 @@
 
 
 var down = false;
-function DropClick(deg, a) {
+function DropClick(deg, a) { //den här funktionen skapar öppning och stängning av nav_drop som har navigationen i sig
   
   if (a == false) {
     
@@ -33,7 +33,7 @@ function DropClick(deg, a) {
 
 
 
-  if (a == true) {
+  if (a == true) { // Compadabilitet med andra knappar
     Button = document.getElementById("RuleButton");
     RulesPage = document.getElementById("RulePage");
     console.log(RulesPage, RulesPage.style.hidden)
@@ -56,6 +56,7 @@ function DropClick(deg, a) {
 
 
 //based on a pen by @robinselmer
+//Ger en json om minecraft servern
 var url = "https://api.mcsrvstat.us/3/creatorcraftmc.us.to	"; //insert  server here
 $.getJSON(url, function (r) {
   //data is the JSON string
@@ -65,7 +66,7 @@ $.getJSON(url, function (r) {
   }
   console.log(r)
 
-  if (r.players.online > 0 && r.players.list.length > 0) {
+  if (r.players.online > 0 && r.players.list.length > 0) { // skapar playerliseten med en loop som kollar array med spelare sedan accessar en api som visar bilden på spelaren, samt tar man spelarens namn
     for (let index = 0; index < r.players.list.length; index++) {
       var id = r.players.list[index].uuid
       var li = document.createElement("li");
@@ -87,7 +88,7 @@ $.getJSON(url, function (r) {
 
     }
   }
-  function occurrences(string, subString, allowOverlapping) {
+  function occurrences(string, subString, allowOverlapping) { // Den här tar och omvandlar en json med färger och sätter in den i vissa htmler och den här visningen är För mobilen, till max-mode så använder jag av mig en api som skapar en image av minecraft serverns banner
 
     string += "";
     subString += "";

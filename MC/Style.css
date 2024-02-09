@@ -1,40 +1,39 @@
 @media screen and (max-width: 1920px) {
     #MSS{
-        display: none;
+        display: none; /*Visar inte objectet i websidan*/
     }
     body{
         background-color: #262223;
     }
     .PLi{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* gör så flexen går neråt*/
         height: 165px;
         width: 65px;
-        margin-left: 40px;
+        margin-left: 40px; /*ändrar distansen från vänster*/
     }
     #im2{
         height: 165px;
         width: 65px;
         
     }
-    *{
+    *{ /*definerar alla object*/
         margin: 0px 0px;
-        list-style: none;
-        background-color: ;
+        list-style: none; /*tar bord list style samt decoration under*/
         text-decoration: none;
         
         
     }
     
     #NavBar{
-        position:sticky;
+        position:sticky; /*gör så att nav baren sitter fast högst upp på sidan oavsett scroll nivån*/
         top:0px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; /* align och justify, för att centrera Navbars items*/
         width: 100%;
     }
-    #Nav_List{
+    #Nav_List{ /*sätter generälla positionen för dens object och sig själv*/
         width: 100%;
         height: 50px;
         display: flex;
