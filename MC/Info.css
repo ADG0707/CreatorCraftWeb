@@ -54,13 +54,10 @@ justify-content: space-around;
     flex-direction: column;
     max-width: 20vw;
 }
-#Mod:hover b{
-    font-size: x-large;
-    color: white;
-    background-color: #595138;
-    width: fit-content;
-    height: fit-content;
-    text-align: left;
+#Mod:hover img{
+    border-radius: 20%;
+    height: 120px;
+    width: 120px;
     
 }
 #Mod img{
