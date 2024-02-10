@@ -1,16 +1,3 @@
-console.log($('#PlistCont'))
-if ($('.PLi').length == 0) {
-  $('#Plist').css("height","0vh");
-}else{
-  $('#Plist').css("height","30vh");
-}
-
-
-
-
-
-
-
 var down = false;
 function DropClick(deg, a) { //den här funktionen skapar öppning och stängning av nav_drop som har navigationen i sig
   
@@ -47,7 +34,7 @@ function DropClick(deg, a) { //den här funktionen skapar öppning och stängnin
   if (a == true) { // Compadabilitet med andra knappar
     Button = document.getElementById("RuleButton");
     RulesPage = document.getElementById("RulePage");
-    console.log(RulesPage, RulesPage.style.hidden)
+
     if (RulesPage.style.display == "none") {
       RulesPage.style.display = "flex"
     } else {
@@ -69,15 +56,24 @@ function DropClick(deg, a) { //den här funktionen skapar öppning och stängnin
 //based on a pen by @robinselmer
 //Ger en json om minecraft servern
 var url = "https://api.mcsrvstat.us/3/creatorcraftmc.us.to	"; //insert  server here
-$.getJSON(url, function (r) {
+function Check() {
+  $.getJSON(url, function (r) {
   //data is the JSON string
   if (r.error) {
     $('#rest').html('Server Offline');
     return false;
   }
-  console.log(r)
 
+  if (r.players.list.length > 0) {
+    console.log("true")
+    document.getElementById("Plist").style.display = "block"
+  }else{
+    console.log("true")
+    
+    document.getElementById("Plist").style.display = "none"
+  }
   if (r.players.online > 0 && r.players.list.length > 0) { // skapar playerliseten med en loop som kollar array med spelare sedan accessar en api som visar bilden på spelaren, samt tar man spelarens namn
+    document.getElementById("PlistCont").replaceChildren("")
     for (let index = 0; index < r.players.list.length; index++) {
       var id = r.players.list[index].uuid
       var li = document.createElement("li");
@@ -87,13 +83,13 @@ $.getJSON(url, function (r) {
       document.getElementById("PlistCont").append(li);
 
       var im2 = document.createElement("img")
-
+      im2.style.zIndex = "1"
       im2.src = "https://api.mineatar.io/body/full/" + id;
       //img.src = "https://api.mineatar.io/skin/" + id
       im2.id = "im2"
 
       document.getElementById(r.players.list[index].name).append(im2);
-
+      
 
 
 
@@ -146,9 +142,12 @@ $.getJSON(url, function (r) {
   CB.innerHTML = Craft
   MB.innerHTML = Minecraft
   MD.innerHTML = Modded
-
+  document.getElementById("SNb").replaceChildren("")
   $('#SNb').append(CrB, CB,MD, MB)
 });
 //kjasdnkasjhdiuashd
-
+clearInterval(interval2)
+}
+Check()
+var interval2 = setInterval(function () { Check(); }, 10000);
 
