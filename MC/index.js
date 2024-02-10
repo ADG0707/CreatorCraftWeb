@@ -57,6 +57,7 @@ function DropClick(deg, a) { //den här funktionen skapar öppning och stängnin
 //Ger en json om minecraft servern
 var url = "https://api.mcsrvstat.us/3/creatorcraftmc.us.to	"; //insert  server here
 function Check() {
+  document.getElementById("ServerBan").src = "http://status.mclive.eu/CreatorCraft/Creatorcraftmc.us.to/25565/banner.png"
   $.getJSON(url, function (r) {
   //data is the JSON string
   if (r.error) {
@@ -64,12 +65,21 @@ function Check() {
     return false;
   }
 
-  if (r.players.list.length > 0) {
+  if (r.players.list && r.players.list.length > 0) {
     console.log("true")
     document.getElementById("Plist").style.display = "block"
+    if (document.getElementById("Welcome2")) {
+      document.getElementById("Welcome2").id = "Welcome"
+    }
+   
+    document.getElementById("Welcome").style.display = "flex"
   }else{
     console.log("true")
+    if (document.getElementById("Welcome")) {
+      document.getElementById("Welcome").id = "Welcome2"
+    }
     
+    document.getElementById("Welcome2").style.display = "flex"
     document.getElementById("Plist").style.display = "none"
   }
   if (r.players.online > 0 && r.players.list.length > 0) { // skapar playerliseten med en loop som kollar array med spelare sedan accessar en api som visar bilden på spelaren, samt tar man spelarens namn
@@ -146,8 +156,8 @@ function Check() {
   $('#SNb').append(CrB, CB,MD, MB)
 });
 //kjasdnkasjhdiuashd
-clearInterval(interval2)
+setTimeout(Check,5000)
 }
 Check()
-var interval2 = setInterval(function () { Check(); }, 10000);
+
 
