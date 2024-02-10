@@ -1,3 +1,14 @@
+console.log($('#PlistCont'))
+if ($('.PLi').length == 0) {
+  $('#Plist').css("height","0vh");
+}else{
+  $('#Plist').css("height","30vh");
+}
+
+
+
+
+
 
 
 var down = false;

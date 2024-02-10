@@ -52,13 +52,42 @@ justify-content: space-around;
     margin-left: 23px;
     display: flex;
     flex-direction: column;
-    max-width: 20vw;
+    align-items: center;
+    justify-content: center;
+    max-width: 15vw;
+    min-height: 145px;
 }
 #Mod:hover img{ /*ökar storleken på bilden när musen är över*/
     border-radius: 20%;
-    height: 120px;
-    width: 120px;
+    animation: Scale 0.1s ease-in-out 0s 1 forwards;
+    position:sticky;
     
+    
+}
+#Mod:not(hover) img{ /*ökar storleken på bilden när musen är över*/
+    border-radius: 20%;
+    animation: NScale 0.05s ease-in-out 0s 1 forwards;
+    z-index: 0;
+}
+@keyframes Scale {
+    0%{
+        height: 100px;
+        width: 100px;
+    }
+    100%{
+        height: 120px;
+        width: 120px;
+    }
+}
+@keyframes NScale {
+    1000%{
+        height: 100px;
+        width: 100px;
+    }
+    0%{
+        height: 120px;
+        width: 120px;
+    }
 }
 #Mod img{ /*Bas img storlek*/
     border-radius: 20%;
