@@ -144,16 +144,19 @@ function Check() {
   var CB = document.createElement("b")
   var MB = document.createElement("b")
   var MD = document.createElement("b")
+  var CreatorCraft = document.createElement("li")
   CrB.style = "color: " + colors[0]
   CB.style = "color: " + colors[1]
   MB.style = "color: " + colors[2]
   MD.style = "color: " + colors[4]
-  CrB.innerHTML = Creator
+
+  CrB.innerHTML = Creator + " "
   CB.innerHTML = Craft
+  CreatorCraft.append(CrB,CB)
   MB.innerHTML = Minecraft
   MD.innerHTML = Modded
   document.getElementById("SNb").replaceChildren("")
-  $('#SNb').append(CrB, CB,MD, MB)
+  $('#SNb').append(CreatorCraft,MD, MB)
 });
 //kjasdnkasjhdiuashd
 setTimeout(Check,5000)

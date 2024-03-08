@@ -5,25 +5,17 @@ li{list-style: none;
 
 }
 #MainArea{margin-left: 0px;
-background:linear-gradient(to bottom, rgb(8, 8, 8),grey,rgb(8, 8, 8));
-
-height: 800px;
-
-
-}
-
-#Nav{
-margin: 0px 0px;
-top: 0px;
-height: 100px;
-width: calc(100% - 20px);
-background-color: black;
-border: 10px solid black;
-border-radius: 0px 0px 10px 10px;
-
-
+background: black;
+position: absolute;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 
 }
+
 
 
 
@@ -32,23 +24,25 @@ border-radius: 0px 0px 10px 10px;
     height: 100%;
 }
 
-
+#title{
+    margin-top: -500px;
+    font-size: 300px;
+    color:  white;
+}
 
 
 #Hold{
-    position: absolute;
-    margin-top: 100px;
-    margin-left: -50px;
-    display: grid;
-    grid-template-columns: 384px 384px 384px 384px 384px;
-    
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
 }
 .box{
     
-    width: 190px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
     background-color: black;
-    border: 10px solid black;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 19px ;
 }
 
@@ -58,12 +52,10 @@ border-radius: 0px 0px 10px 10px;
     
 }
 .SLI{
-    
-    margin-left: 100px;
+    margin-left: -50px;
     width: 200px;
 }
 .SLI:hover{
-    margin-left: 90px;
     width: 210px;
 }
 #MidSectionLine{

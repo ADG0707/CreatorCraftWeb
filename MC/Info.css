@@ -5,6 +5,9 @@ body{
 #Media{
 
 }
+#Mod b {
+    font-family: sans-serif;
+}
 #Download{ /*skapar hur items ska organisera sig genom flex och flexa neråt med spacing runt omkring itemsarna*/
 display: flex;
 flex-direction: column;
@@ -40,7 +43,7 @@ justify-content: space-around;
 }
 #Mods{/*Visar en grid med alla mods i som dessutom gömmer items som inte är i elementet med overflow och white-space*/
     display: grid;
-    grid-template-columns: max-content max-content max-content max-content  max-content max-content max-content;
+    grid-template-columns: max-content max-content max-content  max-content max-content max-content;
     align-items: center;
     overflow: auto;
     white-space: nowrap;
@@ -93,4 +96,32 @@ justify-content: space-around;
     border-radius: 20%;
     height: 100px;
     width: 100px;
+}
+@media screen and (max-width: 800px) {
+    #Mods{/*Visar en grid med alla mods i som dessutom gömmer items som inte är i elementet med overflow och white-space*/
+        display: grid;
+        grid-template-columns: max-content max-content  ;
+        align-items: center;
+        overflow: auto;
+        overflow-x: hidden;
+        white-space: nowrap;
+        height: 550vh;
+        
+        
+    }
+    #Mod{ /*Ändrar hur alla element med Mod id Ska vara positionerade samt deras texter*/
+    
+        margin-left: 15vw;
+        font-size: smaller;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        max-width: 15vw;
+        min-height: 145px;
+    }
+    #Mod b {
+        font-family: sans-serif;
+    }
 }
