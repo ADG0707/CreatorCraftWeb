@@ -1,7 +1,6 @@
 @media screen and (max-width: 1920px) {
     #MSS{
         display: none; /*Visar inte objectet i websidan*/
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
