@@ -1,4 +1,8 @@
 var down = false;
+
+
+
+
 function DropClick(deg, a) { //den här funktionen skapar öppning och stängning av nav_drop som har navigationen i sig
   
   if (a == false) {
