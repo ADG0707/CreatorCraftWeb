@@ -37,18 +37,22 @@
                 </li>
         
         
-                <li class="Nav_I" id="Nav_I_Info"></li>
-                <li class="Nav_I" id="Nav_I_Discord"></li>
+               
+                
+        </nav>
             </ul>
-            <section id="Title"><b>Contact</b></section>
-            <div id="BlockCon">
+            <section id="Form">
+                <b>Contact</b>
+                <div id="BlockCon">
                 <form action="BAck/Input.inc.php" method="POST">
                     <input name="Name" id="Name" cols="30" rows="10"></input>
                     <input name="Message" id="Message" cols="30" rows="10"></input>
                     <button method="">Submitt</button>
-</form>
+                </form>
+                </div>
+            </section>
+           
                
-            </div>
-        </nav>
+      
         
 </html>

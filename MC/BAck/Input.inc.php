@@ -3,9 +3,10 @@
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $username = $_POST["Name"];
     $message = $_POST["Message"];
-
+    
     try {
-       require_once "db.inc.php";
+        if ($message != "" && $username != "") {
+            require_once "db.inc.php";
 
        $query = "INSERT INTO messages (Name,Message) VALUE (?,?);";
        $stmt = $pdo->prepare("$query");
@@ -13,8 +14,14 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
        $pdo = null;
        $stmt = null;
        die("Susceeded");
+        }else {
+            echo "Wrong input";
+        }
+       
     } catch (PDOException $e) {
+       
        die("Quary Failed: " . $e->getMessage());
+       
     }
 }
 else{
