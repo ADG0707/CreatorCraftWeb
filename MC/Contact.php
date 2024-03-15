@@ -42,12 +42,13 @@
             </ul>
             <section id="Title"><b>Contact</b></section>
             <div id="BlockCon">
-                <ol id="Con_List">
-                    <input name="" id="Name" cols="30" rows="10"></input>
-                    <input name="" id="Message" cols="30" rows="10"></input>
-                </ol>
-                <button onclick="SendMessage()"></button>
+                <form action="BAck/Input.inc.php" method="POST">
+                    <input name="Name" id="Name" cols="30" rows="10"></input>
+                    <input name="Message" id="Message" cols="30" rows="10"></input>
+                    <button method="">Submitt</button>
+</form>
+               
             </div>
-        </nav>ä
+        </nav>
         
 </html>
