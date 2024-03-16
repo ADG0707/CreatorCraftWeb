@@ -1,3 +1,5 @@
+<?php 
+                    ob_start();?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -54,8 +56,20 @@
                 </form>
                 </div>
             </section>
+            <section id="Succes">
+                <div id="Cont">
+                     <b>Thanks for you'r message, it will be read.
+                        Now redirecting.
+                     </b>
+                   <script> setTimeout(function(){
+                    window.location.href = "index.php";
+                   },3000);
+                   </script>
+                    
+                </div>
+            </section>
            
                
       
         
-</html>
+</html> 

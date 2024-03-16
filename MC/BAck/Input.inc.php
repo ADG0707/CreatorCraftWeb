@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $username = $_POST["Name"];
     $message = $_POST["Message"];
@@ -13,9 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
        $stmt->execute([$username,$message]);
        $pdo = null;
        $stmt = null;
-       die("Susceeded");
+       
+       header("Location: ../Suscees.php");
+       exit();
         }else {
-            echo "Wrong input";
+           
         }
        
     } catch (PDOException $e) {
@@ -27,3 +29,4 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 else{
     header("Location: ../index.php");
 }
+ob_end_flush();

@@ -96,7 +96,7 @@
 <div id="Bottom">
     <ol id="B_Cont">
         <li class="B_txt" id="Discord"><a href="https://discord.gg/zy9CFtFDcB"><b>Discord</b></a></li>
-        <li class="B_txt" id="Contact"><a href="http://"><b>Contacts</b></a></li>
+        <li class="B_txt" id="Contact"><a href="./Contact.php"><b>Contacts</b></a></li>
         <li class="B_txt" id="Mods"><a href="./Info.html"><b>Mods</b></a></li>
     </ol>
 </div>
