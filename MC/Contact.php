@@ -23,7 +23,7 @@
                     <img id="Nav_I_Drop_Img" onclick="DropClick(180,false)" src="Material/DropSym.png" alt="">
                     <ul id="Drop_ListBarNone">
                         <b class="DLi" id="HomeBut">
-                        <a class="DliB" id="HLink" href="index.html">Home <div id="Dli_Line"></div> </a>
+                        <a class="DliB" id="HLink" href="index.php">Home <div id="Dli_Line"></div> </a>
                            
                         </b>
                         <b class="DLi" id="Infobut">
