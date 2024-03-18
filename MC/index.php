@@ -30,7 +30,7 @@
                    
                 </b>
                 <b class="DLi" id="Infobut">
-                    <a class="DliB" href="Info.html">Info<div id="Dli_Line"></div> </a>
+                    <a class="DliB" href="./About/Info.html">Info<div id="Dli_Line"></div> </a>
                     
                 </b>
                 <!--<b class="DLi" id="NewsBut"><a class="Dli" id="NLink" href="http://creatorcraftmc.us.to:8123/?worldname=CreatorCraft&mapname=Overworld&flat&zoom=1&x=-502&y=64&z=-218&nopanel=true&hidechat=true">Map</a></b>
@@ -96,8 +96,8 @@
 <div id="Bottom">
     <ol id="B_Cont">
         <li class="B_txt" id="Discord"><a href="https://discord.gg/zy9CFtFDcB"><b>Discord</b></a></li>
-        <li class="B_txt" id="Contact"><a href="./Contact.php"><b>Contacts</b></a></li>
-        <li class="B_txt" id="Mods"><a href="./Info.html"><b>Mods</b></a></li>
+        <li class="B_txt" id="Contact"><a href="./Contact/Contact.php"><b>Contacts</b></a></li>
+        <li class="B_txt" id="Mods"><a href="./About/"><b>Mods</b></a></li>
     </ol>
 </div>
 <body>

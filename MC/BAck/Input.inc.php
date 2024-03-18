@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
        $pdo = null;
        $stmt = null;
        
-       header("Location: ../Suscees.php");
+       header("Location: ../Contact/Trans/Suscees.php");
        exit();
         }else {
            
@@ -27,6 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     }
 }
 else{
-    header("Location: ../index.php");
+    header("Location: ../");
 }
 ob_end_flush();
