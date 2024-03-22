@@ -8,5 +8,5 @@
         $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         
     } catch (PDOException $e) {   
-        echo "Failed: ", phpinfo().pdo_drivers();
+        echo "Failed: ", $e;
     }

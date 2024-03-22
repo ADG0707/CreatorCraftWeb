@@ -63,6 +63,7 @@ var url = "https://api.mcsrvstat.us/3/creatorcraftmc.us.to	"; //insert  server h
 function Check() {
   document.getElementById("ServerBan").src = "http://status.mclive.eu/CreatorCraft/Creatorcraftmc.us.to/25565/banner.png"
   $.getJSON(url, function (r) {
+    console.log(r)
   //data is the JSON string
   if (r.error) {
     $('#rest').html('Server Offline');
